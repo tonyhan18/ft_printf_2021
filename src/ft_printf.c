@@ -17,6 +17,7 @@ int	ft_printChar(int c)
 	write(1, &c, 1);
 	return (1);
 }
+
 int	ft_formats(va_list args, const char format)
 {
 	int	printf_len;
@@ -41,7 +42,7 @@ int	ft_formats(va_list args, const char format)
 
 int	ft_printf(const char *str, ...)
 {
-	va_list	args;
+	va_list		args;
 	int			i;
 	int			printf_len;
 

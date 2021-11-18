@@ -20,7 +20,6 @@ static int	ft_len(int n)
 		len = 1;
 	else
 		len = 0;
-	len = (n < 0) ? 1 : 0;
 	while (n != 0)
 	{
 		n = n / 10;
@@ -46,12 +45,11 @@ char	*ft_itoa(int n)
 	size_t		buf_idx;
 	long long	value;
 
+	sign = 1;
 	if (n == 0)
 		return (ft_strdup("0"));
 	if (n < 0)
 		sign = -1;
-	else
-		sign = 1;
 	n_len = ft_len(n);
 	str = (char *)malloc(sizeof(char) * (n_len + 1));
 	if (!str)

@@ -14,8 +14,8 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *cur_node;
-	t_list *del_node;
+	t_list	*cur_node;
+	t_list	*del_node;
 
 	if (!(*lst))
 		return ;
@@ -27,6 +27,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 		cur_node = cur_node->next;
 		free(del_node);
 	}
-	*lst = (t_list*)0;
+	*lst = (t_list*) 0;
 	return ;
 }
