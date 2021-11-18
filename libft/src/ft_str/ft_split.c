@@ -44,7 +44,7 @@ static char	**ft_free_str(char **str)
 	while (*(str + cur_idx))
 		free(*(str + cur_idx));
 	free(str);
-	return ((char**) 0);
+	return ((char **) 0);
 }
 
 static size_t	ft_find_split(char const *s, char c, size_t *str_len)

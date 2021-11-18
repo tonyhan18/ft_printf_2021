@@ -37,7 +37,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	if (start > end)
 		return (ft_strdup(""));
-	if (!(new_mem = (char *) malloc(sizeof(char) * (end - start + 1 + 1))))
+	new_mem = (char *) malloc(sizeof(char) * (end - start + 1 + 1));
+	if (!(new_mem))
 		return (NULL);
 	ft_strlcpy(new_mem, s1 + start, end - start + 1 + 1);
 	return (new_mem);
