@@ -27,7 +27,8 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 		}
 		else
 		{
-			*((unsigned char *)dst + n - i - 1) = *((unsigned char *)src + n - i - 1);
+			*((unsigned char *)dst + n - i - 1)
+				= *((unsigned char *)src + n - i - 1);
 		}
 		i++;
 	}

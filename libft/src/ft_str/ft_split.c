@@ -75,21 +75,21 @@ char	**ft_split(char const *s, char c)
 	size_t	split_cnt;
 
 	if (!s)
-		return ((char**) 0);
+		return ((char **) 0);
 	split_cnt = ft_get_split_cnt(s, c);
-	str = (char**) malloc(sizeof(char*) * (split_cnt + 1));
+	str = (char **)malloc(sizeof(char *) * (split_cnt + 1));
 	if (!(str))
-		return ((char**) 0);
+		return ((char **) 0);
 	row_idx = 0;
 	str_idx = 0;
 	while (row_idx < split_cnt)
 	{
 		str_idx += ft_find_split(s + str_idx, c, &str_len);
-		str[row_idx] = (char*) malloc(str_len + 1);
+		str[row_idx] = (char *) malloc(str_len + 1);
 		if (!str[row_idx])
 			return (ft_free_str(str));
 		ft_strlcpy(str[row_idx++], s + str_idx - str_len, str_len + 1);
 	}
-	str[row_idx] = (char*) 0;
+	str[row_idx] = (char *) 0;
 	return (str);
 }
