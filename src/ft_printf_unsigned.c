@@ -32,15 +32,15 @@ char	*uitoa(unsigned int n)
 	int		len;
 
 	len = ft_unsigned_len(n);
-	num = (char *)malloc(sizeof(char) * n);
+	num = (char *)malloc(sizeof(char) * len);
 	if (!num)
 		return (0);
 	num[len] = '\0';
 	while (n > 0)
 	{
+		len--;
 		num[len] = (n % 10 + '0');
 		n = n / 10;
-		len--;
 	}
 	return (num);
 }

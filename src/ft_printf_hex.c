@@ -52,7 +52,7 @@ void	ft_putHex(unsigned int n, const char format)
 int	ft_printHex(unsigned int n, const char format)
 {
 	if (n == 0)
-		write(1, "0", 1);
+		return (write(1, "0", 1));
 	else
 		ft_putHex(n, format);
 	return (ft_hex_len(n));
