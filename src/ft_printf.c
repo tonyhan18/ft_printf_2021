@@ -22,7 +22,7 @@ int	ft_formats(va_list args, const char format)
 	int	printf_len;
 
 	printf_len = 0;
-	if(format == 'c')
+	if (format == 'c')
 		printf_len += ft_printChar(va_arg(args, int));
 	else if (format == 's')
 		printf_len += ft_printStr(va_arg(args, char *));
@@ -39,11 +39,11 @@ int	ft_formats(va_list args, const char format)
 	return (printf_len);
 }
 
-int ft_printf(const char *str, ...)
+int	ft_printf(const char *str, ...)
 {
-	va_list args;
-	int i;
-	int printf_len;
+	va_list	args;
+	int			i;
+	int			printf_len;
 
 	i = 0;
 	printf_len = 0;
