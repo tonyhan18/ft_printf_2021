@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char *str;
+	char	*str;
 
 	if (fd < 0)
 		return ;

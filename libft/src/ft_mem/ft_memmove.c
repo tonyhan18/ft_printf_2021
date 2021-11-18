@@ -23,13 +23,11 @@ void	*ft_memmove(void *dst, const void *src, size_t n)
 	{
 		if (dst < src)
 		{
-			*((unsigned char *)dst + i) =
-				*((unsigned char *)src + i);
+			*((unsigned char *)dst + i) = *((unsigned char *)src + i);
 		}
 		else
 		{
-			*((unsigned char *)dst + n - i - 1) =
-				*((unsigned char *)src + n - i - 1);
+			*((unsigned char *)dst + n - i - 1) = *((unsigned char *)src + n - i - 1);
 		}
 		i++;
 	}
