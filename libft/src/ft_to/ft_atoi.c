@@ -43,5 +43,5 @@ int	ft_atoi(const char *str)
 		num = num * 10 + (str[i] - '0');
 		i++;
 	}
-	return (int (num * sign));
+	return ((int)(num * sign));
 }
