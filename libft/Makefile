@@ -60,7 +60,7 @@ FTSTR		=	ft_strdup #ft_split ft_strchr  ft_strjoin \
 #SRC_FILES+=$(addprefix $(FTMEM_DIR),$(FTMEM))
 SRC_FILES+=$(addprefix $(FTPUT_DIR),$(FTPUT))
 SRC_FILES+=$(addprefix $(FTTO_DIR),$(FTTO))
-#SRC_FILES+=$(addprefix $(FTSTR_DIR),$(FTSTR))
+SRC_FILES+=$(addprefix $(FTSTR_DIR),$(FTSTR))
 #SRC_FILES+=$(addprefix $(FTLST_DIR),$(FTLST))
 
 SRCS 		= 	$(addprefix $(SRCS_DIR), $(addsuffix .c, $(SRC_FILES)))
