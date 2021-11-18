@@ -33,7 +33,7 @@ int	ft_printStr(char *str)
 	i = 0;
 	if (str == NULL)
 	{
-		ft_putStr("(NULL)");
+		ft_putStr("(null)");
 		return (6);
 	}
 	while (str[i])
