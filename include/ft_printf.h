@@ -16,14 +16,14 @@
 # include <unistd.h>
 # include <stdarg.h>
 
-int	ft_printChar(int c);
-int	ft_formats(va_list args, const char format);
-int	ft_printf(const char *str, ...);
+int		ft_printChar(int c);
+int		ft_formats(va_list args, const char format);
+int		ft_printf(const char *str, ...);
 
 void	ft_putStr(char *str);
-int	ft_printStr(char *str);
-int	ft_printNbr(int num);
-int	ft_printPercent(void);
+int		ft_printStr(char *str);
+int		ft_printNbr(int num);
+int		ft_printPercent(void);
 
 int	ft_unsigned_len(unsigned int n);
 char	*uitoa(unsigned int n);
