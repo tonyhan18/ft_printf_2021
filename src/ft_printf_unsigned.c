@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 #include "libft.h"
 
-int		ft_unsigned_len(unsigned int n)
+int	ft_unsigned_len(unsigned int n)
 {
 	int	printf_len;
 
@@ -45,7 +45,7 @@ char	*uitoa(unsigned int n)
 	return (num);
 }
 
-int		ft_printf_unsigned(unsigned int n)
+int	ft_printf_unsigned(unsigned int n)
 {
 	int		printf_len;
 	char	*num;

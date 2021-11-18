@@ -25,7 +25,7 @@ void	ft_putStr(char *str)
 	}
 }
 
-int		ft_printStr(char *str)
+int	ft_printStr(char *str)
 {
 	int	i;
 
@@ -43,7 +43,7 @@ int		ft_printStr(char *str)
 	return (i);
 }
 
-int		ft_printNbr(int num)
+int	ft_printNbr(int num)
 {
 	int		printf_len;
 	char	*str;
@@ -55,7 +55,7 @@ int		ft_printNbr(int num)
 	return (printf_len);
 }
 
-int		ft_printPercent(void)
+int	ft_printPercent(void)
 {
 	write(1, "%", 1);
 	return (1);

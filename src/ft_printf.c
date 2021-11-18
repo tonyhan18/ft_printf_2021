@@ -12,14 +12,14 @@
 
 #include "ft_printf.h"
 
-int ft_printChar(int c)
+int	ft_printChar(int c)
 {
 	write(1, &c, 1);
 	return (1);
 }
-int ft_formats(va_list args, const char format)
+int	ft_formats(va_list args, const char format)
 {
-	int printf_len;
+	int	printf_len;
 
 	printf_len = 0;
 	if(format == 'c')
@@ -27,7 +27,7 @@ int ft_formats(va_list args, const char format)
 	else if (format == 's')
 		printf_len += ft_printStr(va_arg(args, char *));
 	else if (format == 'p')
-		printf_len += ft_printPtr(va_arg(args, unsigned long long ));
+		printf_len += ft_printPtr(va_arg(args, unsigned long long));
 	else if (format == 'd' || format == 'i')
 		printf_len += ft_printNbr(va_arg(args, int));
 	else if (format == 'u')
@@ -50,11 +50,13 @@ int ft_printf(const char *str, ...)
 	va_start(args, str);
 	while (str[i])
 	{
-		if(str[i] == '%')
+		if (str[i] == '%')
 		{
-			printf_len += ft_formats(args, str[i+1]);
+			printf_len += ft_formats(args, str[i + 1]);
 			i++;
-		} else{
+		}
+		else
+		{
 			printf_len += ft_printChar(str[i]);
 		}
 		i++;
