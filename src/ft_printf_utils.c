@@ -14,9 +14,9 @@
 #include "ft_printf.h"
 #include "libft.h"
 
-void ft_putStr(char *str)
+void	ft_putStr(char *str)
 {
-	int i;
+	int	i;
 
 	while (str[i])
 	{
@@ -25,9 +25,9 @@ void ft_putStr(char *str)
 	}
 }
 
-int ft_printStr(char *str)
+int		ft_printStr(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (str == NULL)
@@ -43,10 +43,10 @@ int ft_printStr(char *str)
 	return (i);
 }
 
-int ft_printNbr(int num)
+int		ft_printNbr(int num)
 {
-	int printf_len;
-	char * str;
+	int		printf_len;
+	char	*str;
 
 	printf_len = 0;
 	str = ft_itoa(num);
@@ -55,7 +55,7 @@ int ft_printNbr(int num)
 	return (printf_len);
 }
 
-int ft_printPercent(void)
+int		ft_printPercent(void)
 {
 	write(1, "%", 1);
 	return (1);

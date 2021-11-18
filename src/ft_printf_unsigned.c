@@ -13,9 +13,9 @@
 #include "ft_printf.h"
 #include "libft.h"
 
-int ft_unsigned_len(unsigned int n)
+int		ft_unsigned_len(unsigned int n)
 {
-	int printf_len;
+	int	printf_len;
 
 	printf_len = 0;
 	while (n > 0)
@@ -26,10 +26,10 @@ int ft_unsigned_len(unsigned int n)
 	return (printf_len);
 }
 
-char *uitoa(unsigned int n)
+char	*uitoa(unsigned int n)
 {
-	char *num;
-	int len;
+	char	*num;
+	int		len;
 
 	len = ft_unsigned_len(n);
 	num = (char *)malloc(sizeof(char) * n);
@@ -45,10 +45,10 @@ char *uitoa(unsigned int n)
 	return (num);
 }
 
-int ft_printf_unsigned(unsigned int n)
+int		ft_printf_unsigned(unsigned int n)
 {
-	int printf_len;
-	char *num;
+	int		printf_len;
+	char	*num;
 
 	printf_len = 0;
 	if (n == 0)
