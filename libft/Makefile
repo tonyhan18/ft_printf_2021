@@ -47,8 +47,8 @@ FTPUT		=	ft_putchar_fd #ft_putendl_fd ft_putnbr_fd ft_putstr_fd
 FTTO_DIR	=	ft_to/
 FTTO		=	ft_itoa #ft_atoi ft_tolower ft_toupper
 
-#FTSTR_DIR	=	ft_str/
-#FTSTR		=	ft_split ft_strchr ft_strdup ft_strjoin \
+FTSTR_DIR	=	ft_str/
+FTSTR		=	ft_strdup #ft_split ft_strchr  ft_strjoin \
 				ft_strlcat ft_strlcpy ft_strlen ft_strmapi ft_strncmp \
 				ft_strnstr ft_strrchr ft_strtrim ft_substr
 
