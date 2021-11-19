@@ -48,7 +48,7 @@ FTTO_DIR	=	ft_to/
 FTTO		=	ft_itoa #ft_atoi ft_tolower ft_toupper
 
 FTSTR_DIR	=	ft_str/
-FTSTR		=	ft_strdup ft_strlen ft_strlcpy #ft_split ft_strchr  ft_strjoin \
+FTSTR		=	ft_strlen ft_strlcpy ft_strdup #ft_split ft_strchr  ft_strjoin \
 				ft_strlcat   ft_strmapi ft_strncmp \
 				ft_strnstr ft_strrchr ft_strtrim ft_substr
 
@@ -85,6 +85,7 @@ $(OBJSF):
 			@mkdir -p $(OBJS_DIR)
 			@mkdir -p $(OBJS_DIR)$(FTPUT_DIR)
 			@mkdir -p $(OBJS_DIR)$(FTTO_DIR)
+			@mkdir -p $(OBJS_DIR)$(FTSTR_DIR)
 			
 clean:
 			@$(RM) -rf $(OBJS_DIR)
